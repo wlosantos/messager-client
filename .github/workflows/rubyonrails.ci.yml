@@ -24,11 +24,7 @@ jobs:
           POSTGRES_PASSWORD: postgres
     env:
       RAILS_ENV: test
-      PGHOST: localhost
-      POSTGRES_DB: rails_github_actions_test
-      POSTGRES_USER: rails_github_actions
-      POSTGRES_PASSWORD: postgres
-      # DATABASE_URL: "postgres://rails:postgresd@localhost:5432/rails_github_actions_test"
+      DATABASE_URL: "postgres://rails:postgresd@localhost:5432/rails_github_actions_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
