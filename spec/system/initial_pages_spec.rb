@@ -7,9 +7,9 @@ RSpec.describe 'InitialPages', type: :system do
     driven_by(:rack_test)
   end
 
-  describe 'GET /' do
+  describe 'GET /index' do
     it 'returns http success' do
-      visit root_path
+      visit static_pages_index_path
       expect(page).to have_http_status(:success)
       expect(page).to have_content('MessagerClient')
     end
