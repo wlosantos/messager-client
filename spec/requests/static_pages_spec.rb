@@ -3,7 +3,6 @@
 require 'rails_helper'
 
 RSpec.describe 'StaticPages', type: :request do
-  before { host! 'example.com' }
   describe 'GET /' do
     it 'returns http success' do
       get '/'
