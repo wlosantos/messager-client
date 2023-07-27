@@ -3,6 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'InitialPages', type: :system do
+  before { host! 'example.com' }
   before do
     driven_by(:rack_test)
   end
